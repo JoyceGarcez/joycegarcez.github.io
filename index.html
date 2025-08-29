@@ -1,44 +1,312 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" data-theme="dark">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Joyce Garcez Silva Portifólio</title>
-    <meta name="description" content="Portifólio da desenvolvedora Front-End Joyce G Silva para compartilhar projetos e habilidades desenvolvidas">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="assets/css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Joyce Garcez Silva | Portfólio Front-End</title>
+  <meta name="description" content="Portfólio da desenvolvedora front-end Joyce Garcez Silva para compartilhar projetos e habilidades desenvolvidas.">
+
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <header class="header">
-        <div class="header_brand"></div>
-        <img class="brand__logo" src="assets/css/image/Logo.png" alt="Logo JGS">
-        <i id="toggleTheme" class="bi bi-bluesky"></i>
-    </header>
-    <nav>
-        <ul class="menu menu--mobile">
-            <li class="menu__item">
-                <a class="menu__link active" href="#home"></a>
-                <i class="menu__icon bi bi-house-door"></i>
-                <span class="menu__text">Home</span>
-            </li>
-              <li class="menu__item">
-                <a class="menu__limk" href="#projetos"></a>
-                <i class="menu__icon bi bi-window-stack"></i>
-                <span class="menu__text">Projetos</span>
-            </li>
-              <li class="menu__item">
-                <a class="menu__limk" href="#sobre"></a>
-                <i class="menu__icon bi bi-person"></i>
-                <span class="menu__text">Sobre</span>
-            </li>
-              <li class="menu__item">
-                <a class="menu__limk" href="#contato"></a>
-                <i class="menu__icon bi bi-envelope"></i>
-                <span class="menu__text">Contato</span>
-            </li>
-        </ul>
+  <header class="header">
+    <nav class="header__nav">
+      <ul class="menu menu--principal">
+        <li class="menu__item">
+          <a class="menu__link active" href="#home">
+            <span class="menu__text">Home</span>
+          </a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#projetos">
+            <span class="menu__text">Projetos</span>
+          </a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#sobre">
+            <span class="menu__text">Sobre</span>
+          </a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#contato">
+            <span class="menu__text">Contato</span>
+          </a>
+        </li>
+      </ul>
     </nav>
-  <h1>Joyce G Silva</h1>  
+    <div class="header__brand">
+      <a href="#home">
+        <img class="brand__logo" src="assets/css/image/Logo.png" alt="Logo JGS">
+      </a>
+    </div>
+    <div class="header__toggle">
+      <i id="toggleTheme" class="bi bi-sun"></i>
+    </div>
+  </header>
+  <nav class="nav--mobile">
+    <ul class="menu menu--mobile">
+      <li class="menu__item">
+        <a class="menu__link active" href="#home">
+          <i class="menu__icon bi bi-house-door"></i>
+          <span class="menu__text">Home</span>
+        </a>
+      </li>
+      <li class="menu__item">
+        <a class="menu__link" href="#projetos">
+          <i class="menu__icon bi bi-window-stack"></i>
+          <span class="menu__text">Projetos</span>
+        </a>
+      </li>
+      <li class="menu__item">
+        <a class="menu__link" href="#sobre">
+          <i class="menu__icon bi bi-person"></i>
+          <span class="menu__text">Sobre</span>
+        </a>
+      </li>
+      <li class="menu__item">
+        <a class="menu__link" href="#contato">
+          <i class="menu__icon bi bi-envelope"></i>
+          <span class="menu__text">Contato</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <main id="home">
+    <div class="main__content1">
+      <h1><b>Soluções Criativas &</b> Desenvolvimento Front-end</h1>
+      <p>Joyce Garcez Silva, São Paulo-SP, Desenvolvedora Front-end.</p>
+      <ul class="menu menu--social">
+        <li>
+          <a class="menu__link" href="https://github.com/JoyceGarcez" target="_blank">
+            <i class="menu__icon bi bi-github"></i>
+          </a>
+        </li>
+        <li>
+          <a class="menu__link" href="https://linkedin.com/in/joyce-garcez-5a7605253/" target="_blank">
+            <i class="menu__icon bi bi-linkedin"></i>
+          </a>
+        </li>
+      </ul>
+      <a href="#projetos">
+        <button class="btn btn--primary">
+          <span>Ver Projetos</span>
+          <i class="bi bi-arrow-down-right"></i>
+        </button>  
+      </a>
+    </div>
+    <div class="main__content2">
+        <img src="assets/css/image/Sobre/hero.png" alt="Imagem de Destaque">
+    </div>
+  </main>
+
+  <section class="technologies">
+    <h2>Conhecimento nas principais tecnologias do mercado</h2>
+    <ul class="technologies__list">
+      <li class="technologies__item">
+        <img class="technologies__logo" src="assets/css/image/tecnologias/logo html.png" alt="Logo HTML">
+      </li>
+      <li class="technologies__item">
+        <img class="technologies__logo" src="assets/css/image/tecnologias/logo css.png" alt="Logo CSS">
+      </li>
+       <li class="technologies__item">
+        <img class="technologies__logo" src="assets/css/image/tecnologias/logo js.png" alt="Logo JavaScript">
+      </li>
+      <li class="technologies__item">
+        <img class="technologies__logo" src="assets/css/image/tecnologias/logo git.png" alt="Logo Git">
+      </li>
+    </ul>
+  </section>
+
+  <section id="projetos" class="projects">
+    <h2>Projetos</h2>
+    <div class="projects__container">
+      <div class="projects__card">
+        <img class="card__cover" src="assets/css/image/projetos/Magik IA.png" alt="Capa do Projeto Magick-IA">
+        <div class="card__body">
+          <h3 class="card__title">Magick-IA</h3>
+          <p class="card__description">Projeto realizado durante a semana do programador com o DEV em dobro.</p>
+          <ul class="card__list">
+            <li class="card__item">Interface para interação com IA;</li>
+            <li class="card__item">Construído com HTML e CSS;</li>
+            <li class="card__item">Layout moderno e responsivo.</li>
+          </ul>
+          <div class="card__buttons">
+            <a href="#" target="_blank">
+              <button class="btn btn--primary">
+                <span>Prévia</span>
+                <i class="bi bi-arrow-up-right"></i>
+              </button>
+            </a>
+            <a href="https://github.com/JoyceGarcez/Magick-IA" target="_blank">
+              <button class="btn">
+                <span>Repositório</span>
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="projects__card card--reverse">
+        <img class="card__cover" src="assets/css/image/projetos/Clone.png" alt="Capa do Projeto Clone do YouTube">
+        <div class="card__body">
+          <h3 class="card__title">Clone da Home do YouTube</h3>
+          <p class="card__description">Primeiro desafio da Trilha de CSS: construindo uma landing page do curso.</p>
+          <ul class="card__list">
+            <li class="card__item">Recriação da interface do YouTube com HTML e CSS;</li>
+            <li class="card__item">Grade de vídeos dinâmica;</li>
+            <li class="card__item">Elementos fiéis ao design original.</li>
+          </ul>
+          <div class="card__buttons">
+            <a href="#" target="_blank">
+              <button class="btn btn--primary">
+                <span>Prévia</span>
+                <i class="bi bi-arrow-up-right"></i>
+              </button>
+            </a>
+            <a href="https://github.com/JoyceGarcez/clone-youtube-trilha-css" target="_blank">
+              <button class="btn">
+                <span>Repositório</span>
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="projects__card">
+        <img class="card__cover" src="assets/css/image/projetos/Quiz Mania.png" alt="Capa do Projeto Quiz-Mania">
+        <div class="card__body">
+          <h3 class="card__title">Quiz-Mania</h3>
+          <p class="card__description">Aplicação de Quiz interativo para testar conhecimentos gerais.</p>
+          <ul class="card__list">
+            <li class="card__item">Perguntas e respostas dinâmicas com JavaScript;</li>
+            <li class="card__item">Sistema de pontuação;</li>
+            <li class="card__item">Feedback visual para respostas certas e erradas.</li>
+          </ul>
+          <div class="card__buttons">
+            <a href="#" target="_blank">
+              <button class="btn btn--primary">
+                <span>Prévia</span>
+                <i class="bi bi-arrow-up-right"></i>
+              </button>
+            </a>
+            <a href="https://github.com/JoyceGarcez/Quiz-Mania" target="_blank">
+              <button class="btn">
+                <span>Repositório</span>
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="sobre" class="about">
+    <div class="about__content1">
+      <img class="about__photo" src="assets/css/image/Sobre/minha foto.JPG" alt="Foto de Joyce Garcez">
+      <div class="about__description">
+        <h2>Sobre mim</h2>
+        <p>Experiência em ambientes administrativos e educacionais, com forte atuação em processos digitais, atendimento remoto e presencial e uso de ferramentas colaborativas. Busco oportunidades para aplicar minhas habilidades em tecnologia, colaboração virtual e comunicação digital, contribuindo com eficiência e autonomia.
+        </p>  
+        <div class="about__icons">
+            <i class="bi bi-translate"></i>
+            <span>Inglês: Avançado | Espanhol: Avançado</span>
+        </div>
+        <div class="description__buttons">
+          <a href="https://linkedin.com/in/joyce-garcez-5a7605253/" target="_blank">
+            <button class="btn btn--primary">
+              <span>Conecte-se Comigo</span>
+              <i class="bi bi-arrow-up-right"></i>
+            </button>  
+          </a>
+          <a href="assets/css/image/Sobre/curriculo-joyce-garcez.pdf" download>
+            <button class="btn">
+              <span>Currículo</span>
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="about__content2">
+      <div class="col1">
+        <div class="row1">
+          <h3>Formação</h3>
+          <h4>Análise e Desenvolvimento de Sistemas</h4>
+          <span>Previsão de conclusão: Dez/2026</span>
+          <div class="about__icons">
+            <i class="bi bi-bank"></i>
+            <span>Universidade Anhembi Morumbi</span>
+          </div>
+           <h4>Ciência da Computação</h4>
+          <span>Previsão de conclusão: Jul/2029</span>
+          <div class="about__icons">
+            <i class="bi bi-bank"></i>
+            <span>Centro Universitário Italo Brasileiro</span>
+          </div>
+        </div>
+        <div class="row2">
+          <h3>Experiência</h3>
+          <h4>Auxiliar Administrativo/Secretaria</h4>
+          <span>CNA Unidades Jardim Ângela e Brooklin. Out/2022 - Jun/2025</span>
+          <span>Realizei atendimento remoto e presencial, com suporte administrativo e financeiro. Gerenciei processos digitais como rematrículas, pagamentos e organização de arquivos.</span>
+        </div>
+      </div>
+      <div class="col2">
+        <h3>Cursos</h3>
+        <div id="accordion">
+          <div class="accordion__item active">
+            <button class="accordion__header start">
+              <span>Formação Front End</span>
+              <i class="bi bi-caret-down-fill"></i>
+            </button>
+            <div class="accordion__body">
+              <p>Alura. 2024.</p>
+              <p>Formação completa com foco em HTML, CSS, JavaScript e frameworks modernos.</p>
+            </div>
+          </div>
+          <div class="accordion__item">
+            <button class="accordion__header">
+              <span>CS50: Introduction to Computer Science</span>
+              <i class="bi bi-caret-down-fill"></i>
+            </button>
+            <div class="accordion__body">
+              <p>HarvardX. 2022.</p>
+              <p>Curso introdutório de Harvard sobre os fundamentos da ciência da computação e programação.</p>
+            </div>
+          </div>
+           <div class="accordion__item">
+            <button class="accordion__header end">
+              <span>Fundamentos de TI: Hardware e Software</span>
+              <i class="bi bi-caret-down-fill"></i>
+            </button>
+            <div class="accordion__body">
+              <p>Fundação Bradesco. 2025.</p>
+              <p>Curso sobre os componentes essenciais de hardware e software que formam a base da TI.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section id="contato" class="contact">
+    <h2>Contate-me</h2>
+    <p>Estou disponível para novas oportunidades. Entre em contato através do e-mail e conecte-se comigo pelas redes sociais.
+    </p>
+    <a href="mailto:joycegaecezsilva@gmail.com">
+      <button class="btn btn--primary">
+        <span class="email">joycegaecezsilva@gmail.com</span>
+      </button>  
+    </a>
+  </section>
+
+  <footer>
+    <p>
+      © 2025. Desenvolvido por 
+      <a href="https://github.com/JoyceGarcez" target="_blank">Joyce Garcez Silva</a>
+      com base no Lab da <a href="https://www.dio.me/" target="_blank">Digital Innovation One</a>.
+    </p>
+  </footer>
+  <script src="assets/script.js"></script>
 </body>
 </html>
